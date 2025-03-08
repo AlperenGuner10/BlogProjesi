@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xd97Eo/4b/VRhXfaqMNLMe4T54wxF3ZB1qQXigo9DI4=",
+  "Hash": "xv7Esw1it+sEgB/6Khzg14iJeUbGyQwvHJPz+nVMjWc=",
   "Source": "BlogProje",
   "BasePath": "_content/BlogProje",
   "Mode": "Default",
@@ -2976,6 +2976,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\weberror\\w3layouts-license.txt"
+    },
+    {
+      "Identity": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
+      "SourceId": "BlogProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\",
+      "BasePath": "_content/BlogProje",
+      "RelativePath": "writerImageFiles/b236736a-613a-472d-a3b7-78b402fb9f25#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bx8qjfhznw",
+      "Integrity": "rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg"
     },
     {
       "Identity": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerPanel\\.gitignore",
@@ -6194,7 +6215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 21:55:15 GMT"
+          "Value": "Fri, 07 Mar 2025 22:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6239,7 +6260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 21:55:15 GMT"
+          "Value": "Fri, 07 Mar 2025 22:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6284,7 +6305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 21:55:15 GMT"
+          "Value": "Fri, 07 Mar 2025 22:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6321,7 +6342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 21:55:15 GMT"
+          "Value": "Fri, 07 Mar 2025 22:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17730,6 +17751,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-plUVNYI2aF9eW0VkUyo6uMiwMD5fsCMjIVg1LHqcFyE="
+        }
+      ]
+    },
+    {
+      "Route": "writerImageFiles/b236736a-613a-472d-a3b7-78b402fb9f25.bx8qjfhznw.jpg",
+      "AssetFile": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "648454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:16:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bx8qjfhznw"
+        },
+        {
+          "Name": "label",
+          "Value": "writerImageFiles/b236736a-613a-472d-a3b7-78b402fb9f25.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0="
+        }
+      ]
+    },
+    {
+      "Route": "writerImageFiles/b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
+      "AssetFile": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "648454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 09:16:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0="
         }
       ]
     },

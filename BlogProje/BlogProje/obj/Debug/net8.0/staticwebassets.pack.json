@@ -561,6 +561,10 @@
       "PackagePath": "staticwebassets\\weberror\\w3layouts-license.txt"
     },
     {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
+      "PackagePath": "staticwebassets\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg"
+    },
+    {
       "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerPanel\\.gitignore",
       "PackagePath": "staticwebassets\\writerPanel\\.gitignore"
     },

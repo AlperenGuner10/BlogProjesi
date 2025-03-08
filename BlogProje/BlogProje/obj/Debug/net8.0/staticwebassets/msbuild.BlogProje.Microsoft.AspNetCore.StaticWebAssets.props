@@ -2520,6 +2520,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\weberror\w3layouts-license.txt'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\writerImageFiles\b236736a-613a-472d-a3b7-78b402fb9f25.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BlogProje</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BlogProje</BasePath>
+      <RelativePath>writerImageFiles/b236736a-613a-472d-a3b7-78b402fb9f25.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bx8qjfhznw</Fingerprint>
+      <Integrity>rw5TCcW+bo1tiL0kpO32x2iTH5MowOOXtlnG2PftAV0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\writerImageFiles\b236736a-613a-472d-a3b7-78b402fb9f25.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\writerPanel\.gitignore'))">
       <SourceType>Package</SourceType>
       <SourceId>BlogProje</SourceId>

@@ -137,6 +137,7 @@ wwwroot\weberror\fonts\fontawesome-webfont.woff2
 wwwroot\weberror\images\banner1.jpg
 wwwroot\weberror\index.html
 wwwroot\weberror\w3layouts-license.txt
+wwwroot\writerImageFiles\b236736a-613a-472d-a3b7-78b402fb9f25.jpg
 wwwroot\writerPanel\.gitignore
 wwwroot\writerPanel\assets\css\style.css
 wwwroot\writerPanel\assets\css\style.css.map
