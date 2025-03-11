@@ -1,6 +1,7 @@
 ﻿using BlogProje.Models;
 using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -13,13 +14,13 @@ namespace BlogProje.Controllers
 	public class WriterController : Controller
 	{
 		WriterManager writerManager = new WriterManager(new EfWriterRepository());
+		Context context = new Context();
 		public IActionResult Index()
 		{
-			return View();
-		}
-		[AllowAnonymous]
-		public IActionResult Test()
-		{
+			var userMail = User.Identity.Name;
+			ViewBag.UserMail = userMail;
+			var userName = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriteName).FirstOrDefault();
+			ViewBag.UserName = userName;
 			return View();
 		}
 		[AllowAnonymous]
@@ -32,14 +33,17 @@ namespace BlogProje.Controllers
 		{
 			return PartialView();
 		}
-		[AllowAnonymous]
 		[HttpGet]
 		public IActionResult WriterEditProfile()
 		{
-			var writerValues = writerManager.GetById(4);
+			var userMail = User.Identity.Name;
+			var userID = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriteID).FirstOrDefault();
+			
+			var values = writerManager.GetWriterById(userID);
+
+			var writerValues = writerManager.GetById(userID);
 			return View(writerValues);
 		}
-		[AllowAnonymous]
 		[HttpPost]
 		public IActionResult WriterEditProfile(Writer writer)
 		{
@@ -60,13 +64,11 @@ namespace BlogProje.Controllers
 			}
 			return View();
 		}
-		[AllowAnonymous]
 		[HttpGet]
 		public IActionResult WriterAdd()
 		{
 			return View();
 		}
-		[AllowAnonymous]	
 		[HttpPost]
 		public IActionResult WriterAdd(AddProfileImage image)
 		{

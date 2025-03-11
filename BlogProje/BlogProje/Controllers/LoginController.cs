@@ -20,7 +20,6 @@ namespace BlogProje.Controllers
 		[AllowAnonymous]
 		public async Task<IActionResult> Index(Writer writer)
 		{
-			Context context = new Context();
 			var datavalue = context.Writers.FirstOrDefault(x => x.WriterMail == writer.WriterMail && x.WriterPassword == writer.WriterPassword);
 			if (datavalue != null)
 			{
@@ -31,7 +30,7 @@ namespace BlogProje.Controllers
 				var useridentity = new ClaimsIdentity(claims, "a");
 				ClaimsPrincipal user = new ClaimsPrincipal(useridentity);
 				await HttpContext.SignInAsync(user);
-				return RedirectToAction("Index", "Writer");
+				return RedirectToAction("Index", "Dashboard");
 			}
 			else
 			{

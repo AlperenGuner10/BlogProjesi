@@ -14,6 +14,21 @@ namespace DataAccessLayer.Concrete
 		{
 			optionsBuilder.UseSqlServer("server=DESKTOP-TVGOALM\\SQLEXPRESS;database=BlogDb;TrustServerCertificate=true;Integrated Security=True;");
 		}
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<MessageConnection>()
+				.HasOne(x=>x.SenderUser)
+				.WithMany(y=>y.WriterSender)
+				.HasForeignKey(z=>z.SenderID)
+				.OnDelete(DeleteBehavior.ClientSetNull);
+
+			modelBuilder.Entity<MessageConnection>()
+				.HasOne(x => x.ReceiverUser)
+				.WithMany(y => y.WriterReceiver)
+				.HasForeignKey(z => z.RecieverID)
+				.OnDelete(DeleteBehavior.ClientSetNull);
+		}
+
 		public DbSet<About> Abouts { get; set; }
 		public DbSet<Blog> Blogs { get; set; }
 		public DbSet<Category> Categories { get; set; }
@@ -24,5 +39,6 @@ namespace DataAccessLayer.Concrete
 		public DbSet<BlogRayting> BlogRaytings { get; set; }
 		public DbSet<Notification> Notifications { get; set; }
 		public DbSet<Message> Messages { get; set; }
+		public DbSet<MessageConnection> MessageConnections { get; set; }
 	}
 }
