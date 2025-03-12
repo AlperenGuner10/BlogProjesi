@@ -1,0 +1,22 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yazar AJAX İşlemleri</h1>
+<br>
+<button type="button" id="btngetlist" class="btn btn-primary">Yazar Listesi</button>
+<button type="button" id="btngetbyid" class="btn btn-success">Yazar Getir</button>
+<br>
+<br>
+<div id="writerlist">
+	Yazarlar gelecek.
+</div>
+<br>
+<div id="writerget">
+	Buraya bir yazar gelecek
+</div>
+<br>
+<div>
+	<input type="text" id="writerid" placeholder="Yazar ID Değerini Girin" class="form-control">
+</div>

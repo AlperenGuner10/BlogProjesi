@@ -1,0 +1,16 @@
+﻿@model BlogProje.Controllers.Class1
+@{
+	ViewData["Title"] = "EditEmployee";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Personel Güncelleme Sayfası</h1>
+<form method="post">
+	<input type="hidden" asp-for="Id" class="form-control">
+	<br>
+	<label>Personel İsim ve Soyisim</label>
+	<input type="text" asp-for="Name" class="form-control">
+	<br>
+	<button class="btn btn-success">Güncelle</button>
+</form>
+

@@ -9,3 +9,4 @@ C:\Users\alper\source\repos\BlogProje\EntityLayer\obj\Debug\net8.0\EntityLayer.d
 C:\Users\alper\source\repos\BlogProje\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
 C:\Users\alper\source\repos\BlogProje\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
 C:\Users\alper\source\repos\BlogProje\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
+C:\Users\alper\source\repos\BlogProje\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.AssemblyReference.cache

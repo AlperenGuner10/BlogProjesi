@@ -1,41 +1,44 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BlogProje.Models;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 using System.Security.Claims;
 
 namespace BlogProje.Controllers
 {
+	[AllowAnonymous]
 	public class LoginController : Controller
 	{
-		Context context = new Context();
-		[AllowAnonymous]
+		private readonly SignInManager<AppUser> _signInManager;
+		public LoginController(SignInManager<AppUser> signInManager)
+		{
+			_signInManager=signInManager;
+		}
+
 		public IActionResult Index()
 		{
 			return View();
 		}
 		[HttpPost]
-		[AllowAnonymous]
-		public async Task<IActionResult> Index(Writer writer)
+		public async Task<IActionResult> Index(UserSignInViewModel model)
 		{
-			var datavalue = context.Writers.FirstOrDefault(x => x.WriterMail == writer.WriterMail && x.WriterPassword == writer.WriterPassword);
-			if (datavalue != null)
+			if (ModelState.IsValid)
 			{
-				var claims = new List<Claim>()
+				var result = await _signInManager.PasswordSignInAsync(model.username, model.password, false, true);
+				if (result.Succeeded)
 				{
-					new Claim(ClaimTypes.Name,writer.WriterMail)
-				};
-				var useridentity = new ClaimsIdentity(claims, "a");
-				ClaimsPrincipal user = new ClaimsPrincipal(useridentity);
-				await HttpContext.SignInAsync(user);
-				return RedirectToAction("Index", "Dashboard");
+					return RedirectToAction("Index", "Dashboard");
+				}
+				else
+				{
+					return RedirectToAction("Index", "Login");
+				}
 			}
-			else
-			{
-				return View();
-			}
+			return View();
 		}
 	}
 }
