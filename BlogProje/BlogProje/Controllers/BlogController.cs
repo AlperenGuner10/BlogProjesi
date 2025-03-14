@@ -12,6 +12,7 @@ using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace BlogProje.Controllers
 {
+	[AllowAnonymous]
 	public class BlogController : Controller
 	{
 		BlogManager blogManager = new BlogManager(new EfBlogRepository());
