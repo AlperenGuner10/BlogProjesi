@@ -30,22 +30,27 @@ namespace BusinessLayer.Concrete
 
 		public List<MessageConnection> GetInboxListByWriter(int id)
 		{
-			return _messageConnectionDal.GetListWithMessageByWriter(id);
+			return _messageConnectionDal.GetInboxWithMessageByWriter(id);
+		}
+
+		public List<MessageConnection> GetSendBoxListByWriter(int id)
+		{
+			return _messageConnectionDal.GetSendBoxWithMessageByWriter(id);
 		}
 
 		public void RemoveT(MessageConnection t)
 		{
-			throw new NotImplementedException();
+			_messageConnectionDal.Delete(t);
 		}
 
 		public void TAdd(MessageConnection t)
 		{
-			throw new NotImplementedException();
+			_messageConnectionDal.Add(t);
 		}
 
 		public void UpdateT(MessageConnection t)
 		{
-			throw new NotImplementedException();
+			_messageConnectionDal.Update(t);
 		}
 	}
 }

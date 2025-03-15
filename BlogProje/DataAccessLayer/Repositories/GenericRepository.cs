@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,9 @@ namespace DataAccessLayer.Repositories
 		public void Add(T t)
 		{
 			context.Add(t);
+			context.Database.ExecuteSqlRaw("DISABLE TRIGGER [dbo].[AddScoreInComment] ON [dbo].[Comments]");
 			context.SaveChanges();
+			context.Database.ExecuteSqlRaw("ENABLE TRIGGER [dbo].[AddScoreInComment] ON [dbo].[Comments]");
 		}
 
 		public void Delete(T t)

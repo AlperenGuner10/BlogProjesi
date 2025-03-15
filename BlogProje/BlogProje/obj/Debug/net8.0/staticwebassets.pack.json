@@ -6585,6 +6585,30 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\README.markdown",
+      "PackagePath": "staticwebassets\\denied\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\dist\\index.html",
+      "PackagePath": "staticwebassets\\denied\\dist\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\dist\\style.css",
+      "PackagePath": "staticwebassets\\denied\\dist\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\license.txt",
+      "PackagePath": "staticwebassets\\denied\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\src\\index.html",
+      "PackagePath": "staticwebassets\\denied\\src\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\denied\\src\\style.css",
+      "PackagePath": "staticwebassets\\denied\\src\\style.css"
+    },
+    {
       "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -6865,8 +6889,16 @@
       "PackagePath": "staticwebassets\\weberror\\w3layouts-license.txt"
     },
     {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\634a7de6-fd21-4689-a056-e483062b8783.jpg",
+      "PackagePath": "staticwebassets\\writerImageFiles\\634a7de6-fd21-4689-a056-e483062b8783.jpg"
+    },
+    {
       "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg",
       "PackagePath": "staticwebassets\\writerImageFiles\\b236736a-613a-472d-a3b7-78b402fb9f25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerImageFiles\\bdbecbe4-b485-4055-b2e3-09ee633afe50.jpg",
+      "PackagePath": "staticwebassets\\writerImageFiles\\bdbecbe4-b485-4055-b2e3-09ee633afe50.jpg"
     },
     {
       "Id": "C:\\Users\\alper\\source\\repos\\BlogProje\\BlogProje\\wwwroot\\writerPanel\\.gitignore",

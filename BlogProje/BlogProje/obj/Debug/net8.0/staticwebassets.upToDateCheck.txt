@@ -1643,6 +1643,12 @@ wwwroot\BlogTema\web\webfonts\fa-solid-900.ttf
 wwwroot\BlogTema\web\webfonts\fa-solid-900.woff
 wwwroot\BlogTema\web\webfonts\fa-solid-900.woff2
 wwwroot\css\site.css
+wwwroot\denied\dist\index.html
+wwwroot\denied\dist\style.css
+wwwroot\denied\license.txt
+wwwroot\denied\README.markdown
+wwwroot\denied\src\index.html
+wwwroot\denied\src\style.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -1713,7 +1719,9 @@ wwwroot\weberror\fonts\fontawesome-webfont.woff2
 wwwroot\weberror\images\banner1.jpg
 wwwroot\weberror\index.html
 wwwroot\weberror\w3layouts-license.txt
+wwwroot\writerImageFiles\634a7de6-fd21-4689-a056-e483062b8783.jpg
 wwwroot\writerImageFiles\b236736a-613a-472d-a3b7-78b402fb9f25.jpg
+wwwroot\writerImageFiles\bdbecbe4-b485-4055-b2e3-09ee633afe50.jpg
 wwwroot\writerPanel\.gitignore
 wwwroot\writerPanel\assets\css\style.css
 wwwroot\writerPanel\assets\css\style.css.map

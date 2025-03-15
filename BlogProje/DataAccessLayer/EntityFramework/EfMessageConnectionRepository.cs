@@ -14,7 +14,13 @@ namespace DataAccessLayer.EntityFramework
 	public class EfMessageConnectionRepository : GenericRepository<MessageConnection>, IMessageConnectionDal
 	{
 		Context context = new Context();
-		public List<MessageConnection> GetListWithMessageByWriter(int id)
+
+		public List<MessageConnection> GetSendBoxWithMessageByWriter(int id)
+		{
+			return context.MessageConnections.Include(x=>x.ReceiverUser).Where(y=>y.SenderID == id).ToList();
+		}
+
+		public List<MessageConnection> GetInboxWithMessageByWriter(int id)
 		{
 			return context.MessageConnections.Include(x => x.SenderUser).Where(x => x.RecieverID == id).ToList();
 		}
